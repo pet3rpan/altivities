@@ -16,19 +16,22 @@ Players can tap on the cards to flip them over. If they match, they get one poin
 
 ## Wordlists
 
-These wordlists have pictures associated with them, which makes them nice to use with memory:
+### General
+
+These wordlists have pictures (mostly from [Irasutoya](https://irasutoya.com)!) associated with them, which makes them nice to use with memory:
 
 * [Alphabet](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/alphabet.json)
-  * [Junior Sunshine 5 (Uppercase)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/lesson1_cards.json)
   * [Let's Try 1 - Lesson 6 (Uppercase)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/LetsTry1/unit6_cards.json)
 * [Animals](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/animals.json)
 * [Christmas (winter)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/winter.json)
-* [Colors](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/colors.json)
+* [Colors (11)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/colors.json)
 * [Countries](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/countries.json)
   * [Junior Sunshine 6 - Lesson 3](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson3.json)
   * [Junior Sunshine 6 - Lesson 3 + Canada](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/countries.json&include=the%20U.S.A.,Brazil,Japan,South%20Korea,China,India,the%20U.K.,France,Germany,Italy,Switzerland,Australia,Egypt,Kenya,Canada)
 * [Halloween](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/halloween.json)
+* [Months](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/months.json)
 * [Numbers (1-20)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/numbers.json)
+  * [Ordinals (1st-31st)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/ordinals.json)
 * [Occupations (Junior Sunshine 6 - Lesson 10)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson10.json)
 * [Prefectures](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/Hepburn/prefectures.json)
 * Shapes
@@ -37,6 +40,40 @@ These wordlists have pictures associated with them, which makes them nice to use
 * [Stationery](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/stationery.json)
   * [Let's Try 2 - Unit 5](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/LetsTry2/unit5_cards.json)
 * [Valentine's Day](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/General/valentines.json)
+
+### Junior Sunshine 5 Cards
+
+These wordlists have pictures that match with the cards available in the back of the textbook.
+
+* [Alphabet (Uppercase) (26)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/alphabet_uppercase_cards.json)
+* [Phonics (16)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/phonics_cards.json)
+* Lesson 2
+  * [Months (12)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/lesson2_cards.json)
+* Lesson 3
+  * [All (19)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/lesson3_cards.json)
+  * [Occupations (5)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/lesson2_cards.json?include=doctor,soccer%20player,police%20officer,florist,teacher)
+  * [Subjects (14)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/lesson3_cards.json&ignore=doctor,soccer%20player,police%20officer,florist,teacher)
+
+### Junior Sunshine 6 Cards
+
+These wordlists have pictures that match with the cards available in the back of the textbook.
+
+* [Alphabet (Uppercase) (26)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/alphabet_uppercase_cards.json)
+* [Phonics (16)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine5/phonics_cards.json)
+* Lesson 2
+  * [Actions (8)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson2_cards.json)
+* Lesson 3
+  * [All (8)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson3_cards.json)
+  * [Food (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson3_cards.json&include=gyoza,cheeseburger,sushi,curry%20and%20naan)
+  * [Places (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson3_cards.json&ignore=gyoza,cheeseburger,sushi,curry%20and%20naan)
+* Lesson 6
+  * [All (25)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json)
+  * [All Words (20)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&ignore=I%20saw,I%20enjoyed,I%20went%20to,I%20ate,It%20was)
+  * [All Sentence Starters (5)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&include=I%20saw,I%20enjoyed,I%20went%20to,I%20ate,It%20was)
+  * [I went to ~ Words (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&include=the%20zoo,the%20swimming%20pool,my%20grandmother%27s%20house,a%20festival)
+  * [I ate ~ Words (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&include=watermelon,somen,sushi,ice%20cream)
+  * [I saw ~ Words (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&include=pandas,beetles,the%20Milky%20Way,fireworks)
+  * [I enjoyed ~ Words (4)](https://altivities.earthiverse.ca/memory/?wordlist=../wordlists/JuniorSunshine6/lesson6_cards.json&include=shopping,camping,swimming,barbecuing)
 
 ## Enable go-again rules
 

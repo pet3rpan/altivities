@@ -3,6 +3,28 @@ import { Wordlist } from "../wordlists/wordlists"
 declare let PARAMETERS: any
 declare let prepareWordlist: () => Promise<Wordlist>
 
+interface textFitOptions {
+    alignVert?: boolean;
+    alignHoriz?: boolean;
+    multiLine?: boolean;
+    detectMultiLine?: boolean;
+    minFontSize?: number;
+    maxFontSize?: number;
+    reProcess?: boolean;
+    widthOnly?: boolean;
+    alignVertWithFlexbox?: boolean;
+}
+
+declare let textFit: (
+    els: Element | Element[] | NodeListOf<Element> | HTMLCollection | null,
+    options?: textFitOptions
+) => void
+
+const PLAY_AREA = document.getElementById("play_area")
+const AREA_3_BY_3 = document.getElementById("bingo_area_3")
+const AREA_4_BY_4 = document.getElementById("bingo_area_4")
+const AREA_5_BY_5 = document.getElementById("bingo_area_5")
+
 function onMouseDown(event: Event) {
     const target = event.currentTarget as HTMLDivElement
 
@@ -23,10 +45,8 @@ function onMouseDown(event: Event) {
 function populateBingo(wordlist: Wordlist, words: string[]) {
     let num = 0
     for (const word of words) {
-        console.debug(`Looking for ${word}...`)
         let found = false
         for (const find of wordlist) {
-            console.debug(`Looking in ${find.en}...`)
             if (Array.isArray(find.en)) {
                 if (!find.en.includes(word)) continue
             }
@@ -39,16 +59,17 @@ function populateBingo(wordlist: Wordlist, words: string[]) {
             itemOutside.classList.add("item")
             itemInside.classList.add("item_inside")
             if (find.image) {
-                itemInside.style.backgroundImage = `url('${find.image}')`
-                itemInside.style.backgroundRepeat = "no-repeat"
-                itemInside.style.backgroundPosition = "center"
-                itemInside.style.backgroundSize = "contain"
+                itemOutside.style.backgroundImage = `url('${find.image}')`
+                itemOutside.style.backgroundRepeat = "no-repeat"
+                itemOutside.style.backgroundPosition = "center"
+                itemOutside.style.backgroundSize = "contain"
             }
 
             itemInside.innerText = word
             itemOutside.appendChild(itemInside)
             const cell = document.getElementById(`cell${num}`)
             cell.appendChild(itemOutside)
+            textFit(itemInside, { alignHoriz: true })
             found = true
             num += 1
             break
@@ -61,11 +82,43 @@ function populateBingo(wordlist: Wordlist, words: string[]) {
 }
 
 async function prepare() {
+    // Set the correct area
+    if (PARAMETERS["4x4"]) {
+        PLAY_AREA.removeChild(AREA_3_BY_3)
+        PLAY_AREA.removeChild(AREA_5_BY_5)
+        AREA_4_BY_4.style.display = "flex"
+    } else if (PARAMETERS["5x5"]) {
+        PLAY_AREA.removeChild(AREA_3_BY_3)
+        PLAY_AREA.removeChild(AREA_4_BY_4)
+        AREA_5_BY_5.style.display = "flex"
+    } else {
+        PLAY_AREA.removeChild(AREA_4_BY_4)
+        PLAY_AREA.removeChild(AREA_5_BY_5)
+        AREA_3_BY_3.style.display = "flex"
+    }
+
     const combinedWordlist = await prepareWordlist()
     const words = (PARAMETERS.words as string).split("🔥")
     populateBingo(combinedWordlist, words)
+
+    if (PARAMETERS.title) {
+        const playArea = document.getElementById("play_area")
+        const title = document.createElement("div")
+        title.classList.add("break")
+        title.style.fontSize = "3vh"
+        title.innerText = PARAMETERS.title
+        playArea.prepend(title)
+    }
 }
 prepare()
+
+function fitTextForAllCards() {
+    const cards = document.getElementsByClassName("item_inside") as HTMLCollectionOf<HTMLDivElement>
+    for (let i = 0; i < cards.length; i++) {
+        const inside = cards.item(i)
+        textFit(inside, { alignHoriz: true })
+    }
+}
 
 // The following handles resizing the window.
 // It's a hack to fill in the screen on iPads.
@@ -75,6 +128,8 @@ function resize() {
     RESIZE_FINISHED = setTimeout(() => {
         const vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty("--vh", `${vh}px`)
+
+        fitTextForAllCards()
     }, 250)
 }
 resize()

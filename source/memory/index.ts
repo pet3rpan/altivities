@@ -10,8 +10,10 @@ declare global {
     }
 }
 
+// NOTE: These get included because we import wordlist.js
 declare let PARAMETERS: any
 declare let prepareWordlist: () => Promise<Wordlist>
+declare let randomIntFromInterval: (min: number, max: number) => number
 
 // QR Code
 // TODO: What do I change this to to make it work without the disable-next-line!?
@@ -67,10 +69,6 @@ export type Data =
 
 /*******************************************************************************
 *** Helpers *******************************************************************/
-function randomIntFromInterval(min, max) { // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 function shuffle(array) {
     let currentIndex = array.length, randomIndex
 
@@ -120,6 +118,9 @@ const PEERJS_CONFIG: Peer.PeerJSOption = {
                 urls: "stun:openrelay.metered.ca:80"
             },
             {
+                urls: "stun:stun.l.google.com:19302"
+            },
+            {
                 credential: "openrelayproject",
                 urls: "turn:openrelay.metered.ca:80",
                 username: "openrelayproject"
@@ -133,6 +134,11 @@ const PEERJS_CONFIG: Peer.PeerJSOption = {
                 credential: "openrelayproject",
                 urls: "turn:openrelay.metered.ca:443?transport=tcp",
                 username: "openrelayproject"
+            },
+            {
+                urls: "turn:numb.viagenie.ca:3478",
+                username: "hyprkookeez@gmail.com",
+                credential: "BE8TdqMYuDp6P!h"
             }
         ]
     },
@@ -723,11 +729,13 @@ async function prepare() {
         const wordlist = await prepareWordlist()
 
         if (IS_HOST && wordlist.length == 0) {
-            showError("No wordlist detected. Please see documentation.")
+            showError("Redirecting to documentation...")
+            window.location.replace("https://github.com/earthiverse/altivities/tree/main/source/memory#wordlists=")
             return
         }
     } catch (e) {
-        showError("Error loading wordlist. Please see documentation.")
+        showError("Error loading wordlist. Redirecting to documentation...")
+        window.location.replace("https://github.com/earthiverse/altivities/tree/main/source/memory#wordlists=")
         return
     }
 

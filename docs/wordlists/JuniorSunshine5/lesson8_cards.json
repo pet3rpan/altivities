@@ -1,0 +1,257 @@
+[
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/pizza.png",
+        "en": [
+            "pizza",
+            "a pizza",
+            "some pizza"
+        ],
+        "ja": {
+            "hiragana": "ぴざ",
+            "kanji": "ピザ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/hamburger.png",
+        "en": [
+            "hamburger",
+            "a hamburger"
+        ],
+        "ja": {
+            "hiragana": "はんばーがー",
+            "kanji": "ハンバーガー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/steak.png",
+        "en": [
+            "steak",
+            "a steak"
+        ],
+        "ja": {
+            "hiragana": "すてーき",
+            "kanji": "ステーキ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/spaghetti.png",
+        "en": [
+            "spaghetti",
+            "some spaghetti"
+        ],
+        "ja": {
+            "hiragana": "すぱげってぃ",
+            "kanji": "スパゲッティ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/salad.png",
+        "en": [
+            "salad",
+            "a salad"
+        ],
+        "ja": {
+            "hiragana": "さらだ",
+            "kanji": "サラダ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/sandwich.png",
+        "en": [
+            "sandwich",
+            "a sandwich"
+        ],
+        "ja": {
+            "hiragana": "さんどいっち",
+            "kanji": "サンドイッチ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/hot_dog.png",
+        "en": [
+            "hot dog",
+            "a hot dog"
+        ],
+        "ja": {
+            "hiragana": "ほっとどっぐ",
+            "kanji": "ホットドッグ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/soup.png",
+        "en": [
+            "soup",
+            "some soup"
+        ],
+        "ja": {
+            "hiragana": "すーぷ",
+            "kanji": "スープ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/bread.png",
+        "en": [
+            "bread",
+            "a loaf of bread",
+            "some bread"
+        ],
+        "ja": {
+            "hiragana": "ぱん",
+            "kanji": "パン"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/rice.png",
+        "en": [
+            "rice",
+            "some rice"
+        ],
+        "ja": {
+            "hiragana": "ごはん",
+            "kanji": "ご飯"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/fruits/apple.png",
+        "en": [
+            "apple",
+            "an apple"
+        ],
+        "ja": {
+            "hiragana": "りんご",
+            "kanji": "林檎"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/fruits/banana.png",
+        "en": [
+            "banana",
+            "a banana"
+        ],
+        "ja": {
+            "hiragana": "ばなな",
+            "kanji": "バナナ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/grilled_fish.png",
+        "en": [
+            "grilled fish",
+            "a grilled fish",
+            "some grilled fish"
+        ],
+        "ja": {
+            "hiragana": "やきざかな",
+            "kanji": "焼き魚"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/fried_chicken.png",
+        "en": [
+            "fried chicken",
+            "some fried chicken"
+        ],
+        "ja": {
+            "hiragana": "ふらいどちきん",
+            "kanji": "フライドチキン"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/food/french_fries.png",
+        "en": [
+            "French fries",
+            "some French Fries"
+        ],
+        "ja": {
+            "hiragana": "ふらいどぽてと",
+            "kanji": "フライドポテト"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/milk.png",
+        "en": [
+            "milk",
+            "a milk",
+            "some milk"
+        ],
+        "ja": {
+            "hiragana": "ぎゅうにゅう",
+            "kanji": "牛乳"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/soda.png",
+        "en": [
+            "soda",
+            "a soda",
+            "some soda"
+        ],
+        "ja": {
+            "hiragana": "そーだ",
+            "kanji": "ソーダ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/juice.png",
+        "en": [
+            "juice",
+            "a juice",
+            "some juice"
+        ],
+        "ja": {
+            "hiragana": "じゅーす",
+            "kanji": "ジュース"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/mineral_water.png",
+        "en": [
+            "mineral water",
+            "a mineral water",
+            "some mineral water"
+        ],
+        "ja": {
+            "hiragana": "みねらるうぉーたー",
+            "kanji": "ミネラルウォーター"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/tea.png",
+        "en": [
+            "tea",
+            "a tea",
+            "some tea"
+        ],
+        "ja": {
+            "hiragana": "おちゃ",
+            "kanji": "お茶"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/coffee.png",
+        "en": [
+            "coffee",
+            "a coffee",
+            "some coffee"
+        ],
+        "ja": {
+            "hiragana": "こーひー",
+            "kanji": "珈琲"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/drinks/japanese_tea.png",
+        "en": [
+            "Japanese tea",
+            "a Japanese tea",
+            "some Japanese tea",
+            "green tea",
+            "a green tea",
+            "some green tea"
+        ],
+        "ja": {
+            "hiragana": "にほんちゃ",
+            "kanji": "日本茶"
+        }
+    }
+]

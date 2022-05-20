@@ -1,0 +1,210 @@
+[
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/A.svg",
+        "en": "A",
+        "ja": {
+            "kanji": "エイ",
+            "hiragana": "えい"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/B.svg",
+        "en": "B",
+        "ja": {
+            "kanji": "ビー",
+            "hiragana": "びー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/C.svg",
+        "en": "C",
+        "ja": {
+            "kanji": "シー",
+            "hiragana": "しー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/D.svg",
+        "en": "D",
+        "ja": {
+            "kanji": "ディー",
+            "hiragana": "でぃー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/E.svg",
+        "en": "E",
+        "ja": {
+            "kanji": "イー",
+            "hiragana": "いー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/F.svg",
+        "en": "F",
+        "ja": {
+            "kanji": "エフ",
+            "hiragana": "えふ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/G.svg",
+        "en": "G",
+        "ja": {
+            "kanji": "ジー",
+            "hiragana": "じー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/H.svg",
+        "en": "H",
+        "ja": {
+            "kanji": "エッチ",
+            "hiragana": "えっち"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/I.svg",
+        "en": "I",
+        "ja": {
+            "kanji": "アイ",
+            "hiragana": "あい"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/J.svg",
+        "en": "J",
+        "ja": {
+            "kanji": "ジェー",
+            "hiragana": "じぇー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/K.svg",
+        "en": "K",
+        "ja": {
+            "kanji": "ケイ",
+            "hiragana": "けい"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/L.svg",
+        "en": "L",
+        "ja": {
+            "kanji": "エル",
+            "hiragana": "える"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/M.svg",
+        "en": "M",
+        "ja": {
+            "kanji": "エム",
+            "hiragana": "えむ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/N.svg",
+        "en": "N",
+        "ja": {
+            "kanji": "エヌ",
+            "hiragana": "えぬ"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/O.svg",
+        "en": "O",
+        "ja": {
+            "kanji": "オー",
+            "hiragana": "おー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/P.svg",
+        "en": "P",
+        "ja": {
+            "kanji": "ピー",
+            "hiragana": "ぴー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/Q.svg",
+        "en": "Q",
+        "ja": {
+            "kanji": "キュー",
+            "hiragana": "きゅー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/R.svg",
+        "en": "R",
+        "ja": {
+            "kanji": "アール",
+            "hiragana": "あーる"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/S.svg",
+        "en": "S",
+        "ja": {
+            "kanji": "エス",
+            "hiragana": "えす"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/T.svg",
+        "en": "T",
+        "ja": {
+            "kanji": "ティー",
+            "hiragana": "てぃー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/U.svg",
+        "en": "U",
+        "ja": {
+            "kanji": "ユー",
+            "hiragana": "ゆー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/V.svg",
+        "en": "V",
+        "ja": {
+            "kanji": "ブィー",
+            "hiragana": "ぶぃー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/W.svg",
+        "en": "W",
+        "ja": {
+            "kanji": "ダブリュー",
+            "hiragana": "だぶりゅー"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/X.svg",
+        "en": "X",
+        "ja": {
+            "kanji": "エックス",
+            "hiragana": "えっくす"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/Y.svg",
+        "en": "Y",
+        "ja": {
+            "kanji": "ワイ",
+            "hiragana": "わい"
+        }
+    },
+    {
+        "image": "https://altivities.earthiverse.ca/wordlists/JuniorSunshine5/images/alphabet_uppercase/Z.svg",
+        "en": "Z",
+        "ja": {
+            "kanji": "ゼット",
+            "hiragana": "ぜっと"
+        }
+    }
+]

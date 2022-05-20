@@ -11,16 +11,14 @@
     <meta property="og:url" content="https://altivities.earthiverse.ca/bingo/" />
     <meta property="og:image" content="https://altivities.earthiverse.ca/bingo/images/screenshot.png" />
     <title>Let's play bingo!</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/KeeeX/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="https://www.unpkg.com/textfit@2.4.0/textFit.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script>
         var exports = {};
-        WebFont.load({
-            google: {
-                families: ["Schoolbell"]
-            }
-        });
     </script>
     <script src="DragDropTouch.js" defer></script>
     <script src="../wordlists/wordlists.js" defer></script>
@@ -29,7 +27,7 @@
 
 <body>
     <div id="play_area">
-        <div id="bingo_area">
+        <div id="bingo_area_3">
             <div id="cell0" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
             <div id="cell1" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
             <div id="cell2" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
@@ -39,6 +37,51 @@
             <div id="cell6" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
             <div id="cell7" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
             <div id="cell8" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+        </div>
+        <div id="bingo_area_4">
+            <div id="cell0" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell1" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell2" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell3" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell4" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell5" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell6" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell7" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell8" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell9" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell10" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell11" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell12" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell13" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell14" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell15" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+        </div>
+        <div id="bingo_area_5">
+            <div id="cell0" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell1" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell2" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell3" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell4" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell5" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell6" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell7" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell8" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell9" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell10" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell11" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell12" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell13" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell14" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell15" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell16" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell17" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell18" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell19" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell20" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell21" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell22" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell23" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            <div id="cell24" class="bingo_cell" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
         </div>
         <div id="menu" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
         <div class="break"></div>

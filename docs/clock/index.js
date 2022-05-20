@@ -5,7 +5,19 @@ const CLOCK_HOUR = document.getElementById("clock_hour");
 const INPUT_HOUR = document.getElementById("input_hour");
 const INPUT_MINUTE = document.getElementById("input_minute");
 const INPUT_CHECK = document.getElementById("input_check");
+const INPUT_SET_RESOLUTION = document.getElementById("input_set_resolution");
 const RESPONSES = document.getElementById("responses");
+const SETTINGS = document.getElementById("settings");
+const SETTINGS_TOGGLE = document.getElementById("settings_toggle");
+SETTINGS_TOGGLE.addEventListener("click", () => {
+    SETTINGS.style.visibility = "visible";
+    SETTINGS.style.opacity = "1";
+});
+INPUT_SET_RESOLUTION.addEventListener("click", () => {
+    SETTINGS.style.visibility = "hidden";
+    SETTINGS.style.opacity = "0";
+    getNewTime();
+});
 const COLOR_GREEN = "#00A236";
 const COLOR_ORANGE = "#ED7800";
 const CORRECT_IMAGES = [
@@ -53,19 +65,25 @@ function disableInputs() {
     INPUT_HOUR.disabled = true;
     INPUT_MINUTE.disabled = true;
     INPUT_CHECK.disabled = true;
+    INPUT_CHECK.style.cursor = "default";
 }
 function enableInputs() {
     INPUT_HOUR.disabled = false;
     INPUT_MINUTE.disabled = false;
     INPUT_CHECK.disabled = false;
+    INPUT_CHECK.style.cursor = "pointer";
     INPUT_HOUR.focus();
     INPUT_HOUR.select();
 }
 function getNewTime() {
-    const minuteResolution = 5;
-    time_hours = getRandomInt(1, 12);
-    time_minutes = getRandomInt(0, (60 - minuteResolution) / minuteResolution) * minuteResolution;
-    console.log(`New Time: ${time_hours}:${time_minutes}`);
+    const selectedResolution = document.querySelector("input[name=\"res\"]:checked").value;
+    const minuteResolution = Number.parseInt(selectedResolution);
+    const old_hours = time_hours;
+    const old_minutes = time_minutes;
+    while (old_hours == time_hours && old_minutes == time_minutes) {
+        time_hours = getRandomInt(1, 12);
+        time_minutes = getRandomInt(0, (60 - minuteResolution) / minuteResolution) * minuteResolution;
+    }
     clearInputs();
     disableInputs();
     const hours_deg = 360 * (time_hours / 12) + ((360 / 12) * (time_minutes / 60));

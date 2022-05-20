@@ -1,8 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
     while (currentIndex != 0) {
@@ -39,6 +36,9 @@ const PEERJS_CONFIG = {
                 urls: "stun:openrelay.metered.ca:80"
             },
             {
+                urls: "stun:stun.l.google.com:19302"
+            },
+            {
                 credential: "openrelayproject",
                 urls: "turn:openrelay.metered.ca:80",
                 username: "openrelayproject"
@@ -52,6 +52,11 @@ const PEERJS_CONFIG = {
                 credential: "openrelayproject",
                 urls: "turn:openrelay.metered.ca:443?transport=tcp",
                 username: "openrelayproject"
+            },
+            {
+                urls: "turn:numb.viagenie.ca:3478",
+                username: "hyprkookeez@gmail.com",
+                credential: "BE8TdqMYuDp6P!h"
             }
         ]
     },
@@ -548,12 +553,14 @@ async function prepare() {
     try {
         const wordlist = await prepareWordlist();
         if (IS_HOST && wordlist.length == 0) {
-            showError("No wordlist detected. Please see documentation.");
+            showError("Redirecting to documentation...");
+            window.location.replace("https://github.com/earthiverse/altivities/tree/main/source/memory#wordlists=");
             return;
         }
     }
     catch (e) {
-        showError("Error loading wordlist. Please see documentation.");
+        showError("Error loading wordlist. Redirecting to documentation...");
+        window.location.replace("https://github.com/earthiverse/altivities/tree/main/source/memory#wordlists=");
         return;
     }
     if (IS_HOST) {
